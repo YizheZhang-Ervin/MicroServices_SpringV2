@@ -1,16 +1,20 @@
-# EZTitanium
-Titanium
-
-# Steps
-- Install
-npm install appcelerator -g  
-
-- Settings
-appc setup  
-
-- New app
-appc new --type app --name MyFirstApp --id com.appcelerator.MyFirstApp  
-
-- Run server
-cd MyFirstApp  
-appc run --platform ios  
+# Vue + Flask RESTful  
+Vue + Flask RESTful  
+  
+# Features  
+## Frontend(static folder + index.html)  
+- Vue + ElementUI + Echarts + Axios  
+- GetMedia +TakePhoto  
+- Video drag + drop  
+- get latitude and longitude  
+- Echart World/China Maps  
+- Browser Parameters  
+- axios communication with backend  
+- title Clock if page Visible  
+  
+## Backend(FinTechAlgs + app.py)  
+- FinTech Algorithms  
+- get动态路由传值  
+- get问号路由参数传值  
+- post传值  
+  

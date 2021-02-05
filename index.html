@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <title>VueFlask</title>
+        <style>
+            .bordered{
+                border:2px dashed black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="app">
+            <!-- take photo -->
+            <section>
+                <el-divider></el-divider>
+                <el-divider content-position="left">Get Media</el-divider>
+                <video id="video001" height="300px" width="300px" autoplay class="bordered"></video>
+                <canvas id="canvas001" height="300px" width="300px" class="bordered"></canvas>
+                <button @click="getMedia">Open Camera</button>
+                <button @click="takePhoto">Take Photo</button>
+            </section>
+            <!-- video -->
+            <section>
+                <el-divider></el-divider>
+                <el-divider content-position="left">Drag Drop Media</el-divider>
+                <div @dragstart="drag($event)" draggable="true">/static/video/niceday.mp4</div>
+                <video height="300px" width="300px" @drop="drop($event)" control autoplay
+                    @dragover="allowDrop($event)" class="bordered"></video>
+            </section>
+            <!-- maps -->
+            <section>
+                <el-divider></el-divider>
+                <el-divider content-position="left">Maps</el-divider>
+                <div id="charts" style="height: 300px; width: 300px" class="bordered"></div>
+            </section>
+            <!-- parameters -->
+            <section>
+                <el-divider></el-divider>
+                <el-divider content-position="left">Parameters</el-divider>
+                <p><b>浏览器/屏幕宽高属性</b></p>
+                <div v-for="k in dataWidthHeight" :key=k>
+                    <el-card shadow="hover">
+                        {{k}}
+                    </el-card>
+                </div>
+                <p><b>地址属性</b></p>
+                <div v-for="k in dataURL" :key=k>
+                    <el-card shadow="hover">
+                        {{k}}
+                    </el-card>
+                </div>
+                <p><b>硬件属性</b></p>
+                <div v-for="k in dataHardware" :key=k>
+                    <el-card shadow="hover">
+                        {{k}}
+                    </el-card>
+                </div>
+                <p><b>连接属性</b></p>
+                <div v-for="k in dataConnection" :key=k>
+                    <el-card shadow="hover">
+                        {{k}}
+                    </el-card>
+                </div>
+                <p><b>其他属性</b></p>
+                <div v-for="k in dataOther" :key=k>
+                    <el-card shadow="hover">
+                        {{k}}
+                    </el-card>
+                </div>
+            </section>
+            
+            <!-- scripts -->
+            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios@0.21.0/dist/axios.min.js"></script>
+            <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+            <script src="./static/js/index.js" async="async"></script>
+            <script src="./static/js/china.js"></script>
+            <script src="./static/js/world.js"></script>
+        </section>
+    </body>
+
+</html>
