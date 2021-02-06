@@ -4,13 +4,14 @@ Vue + Flask RESTful
 # Features  
 ## Frontend (static folder + index.html)  
 - Vue + ElementUI + Echarts + Axios  
+- Mouse Position  
 - GetMedia +TakePhoto  
 - Video drag + drop  
 - get latitude and longitude  
 - Echart World/China Maps  
 - Browser Parameters  
 - axios communication with backend  
-- title Clock if page Visible  
+- title Clock if page Visible(2 kinds of clock)  
   
 ## Backend (FinTechAlgs + app.py)  
 cmd: python -m flask run  
