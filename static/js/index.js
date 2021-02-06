@@ -56,6 +56,7 @@ var app = new Vue({
         setInterval(() => {
             this.checkVisibility();
         }, 1000);
+        this.attack_kp();
     },
     // 父组件传入的参数
     props: {
@@ -216,6 +217,19 @@ var app = new Vue({
             let canvas = document.getElementById("canvas001");
             let ctx = canvas.getContext('2d');
             ctx.drawImage(video, 0, 0, 240, 240);
+        },
+        // 防止鼠标右键
+        attack_cm(){
+            alert("prevent right click")
+        },
+        // 防止f12
+        attack_kp(){
+            document.addEventListener("keydown",(e)=>{
+                if(e.key == "F12") {
+                    window.event.returnValue=false;
+                    alert("prevent F12")
+                }
+            })
         }
     }
 });
