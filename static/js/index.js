@@ -47,16 +47,20 @@ var app = new Vue({
             },
             params: "",
             getRst: "",
-            transferData2:""
+            transferData2: "",
+            mouseX: 0,
+            mouseY: 0,
         }
     },
     mounted() {
-        this.getGeolocation();
-        this.plot();
         setInterval(() => {
             this.checkVisibility();
         }, 1000);
+        
+        this.getGeolocation();
+        this.plot();
         this.attack_kp();
+        document.onmousemove = this.mouseMove;
     },
     // 父组件传入的参数
     props: {
@@ -74,14 +78,52 @@ var app = new Vue({
             let vs = document.visibilityState;
             let date = new Date(Date.now());
             if (vs == "visible") {
-              document.title =
-                "VueFlask - " +
-                date.getHours() +
-                ":" +
-                date.getMinutes() +
-                ":" +
-                date.getSeconds();
+                document.title =
+                    "VueFlask - " +
+                    date.getHours() +
+                    ":" +
+                    date.getMinutes() +
+                    ":" +
+                    date.getSeconds();
             }
+        },
+        // title时钟，当页面挂在后台时播放
+        checkVisibility2() {
+			let timer;
+			if (document.visibilityState != "visible") {
+				timer = setInterval(() => {
+					let date = new Date(Date.now());
+					document.title =
+						"YeStock " +
+						date.getHours() +
+						":" +
+						date.getMinutes() +
+						":" +
+						date.getSeconds();
+					if (document.visibilityState == "visible") {
+						clearInterval(timer);
+						document.title = "YeStock";
+					}
+				}, 1000);
+			}
+		},
+        // 获取鼠标位置
+        mouseMove(ev) {
+            ev = ev || window.event;
+            var mousePos = this.mouseCoords(ev);
+            //获取当前的x,y坐标
+            this.mouseX = mousePos.x;
+            this.mouseY = mousePos.y;
+        },
+        mouseCoords(ev) {
+            //鼠标移动的位置
+            if (ev.pageX || ev.pageY) {
+                return { x: ev.pageX, y: ev.pageY };
+            }
+            return {
+                x: ev.clientX + document.body.scrollLeft - document.body.clientLeft,
+                y: ev.clientY + document.body.scrollTop - document.body.clientTop,
+            };
         },
         // get data from backend
         get: function () {
@@ -116,22 +158,22 @@ var app = new Vue({
         },
         postOne: function () {
             axios
-              .post(`http://127.0.0.1:5000/api/`, {
-                key: JSON.stringify(this.params)
-              })
-              .then(
-                (response) => {
-                    if (response.data.error == "error") {
-                        console.log("bakend error");
-                    } else {
-                        this.getRst = response.data.result;
+                .post(`http://127.0.0.1:5000/api/`, {
+                    key: JSON.stringify(this.params)
+                })
+                .then(
+                    (response) => {
+                        if (response.data.error == "error") {
+                            console.log("bakend error");
+                        } else {
+                            this.getRst = response.data.result;
+                        }
+                    },
+                    function (err) {
+                        console.log(err.data);
                     }
-                },
-                function (err) {
-                  console.log(err.data);
-                }
-              );
-          },
+                );
+        },
         // video drag and drop
         allowDrop(ev) {
             ev.preventDefault();
@@ -219,14 +261,14 @@ var app = new Vue({
             ctx.drawImage(video, 0, 0, 240, 240);
         },
         // 防止鼠标右键
-        attack_cm(){
+        attack_cm() {
             alert("prevent right click")
         },
         // 防止f12
-        attack_kp(){
-            document.addEventListener("keydown",(e)=>{
-                if(e.key == "F12") {
-                    window.event.returnValue=false;
+        attack_kp() {
+            document.addEventListener("keydown", (e) => {
+                if (e.key == "F12") {
+                    window.event.returnValue = false;
                     alert("prevent F12")
                 }
             })
