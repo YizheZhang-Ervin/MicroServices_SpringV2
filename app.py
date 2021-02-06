@@ -1,15 +1,13 @@
-from flask import Flask, request, redirect
+from flask import Flask, jsonify, render_template, request
 from flask_restful import Api,Resource,reqparse
 from flask_cors import CORS
-from flask import jsonify, render_template, request
-from translate import Translator
-from imp import reload
-import os
-import sys
-sys.path.append("..") 
-from FinTechAlgs import Bonds_NSModel,Bonds_NSSModel
+import click
+# import os
+# import sys
+# sys.path.append("..") 
+# from FinTechAlgs import Bonds_NSModel,Bonds_NSSModel
+# BASE_DIR = os.path.dirname(__file__)
 
-BASE_DIR = os.path.dirname(__file__)
 
 # Initialize Flask
 app = Flask(__name__,static_folder='static',template_folder='static',static_url_path="")
@@ -80,5 +78,13 @@ class jsonAPI2(Resource):
             return jsonify({"error":"error"})
 api.add_resource(jsonAPI2, '/api/')
 
+# 执行方法: python app.py  --mode=True --host="127.0.0.2" --port="5000"
+@click.command()
+@click.option('--mode', default=True, type=click.Choice(["True", "False"]), help="True:develop / False:production")
+@click.option('--host', default='127.0.0.1', type=str, help='x.x.x.x')
+@click.option('--port', default='8080', type=str, help='1-65535')
+def run(host,port,mode):
+    app.run(debug=mode,host=host,port=port)
+
 if __name__ == '__main__':
-    app.run(debug=False)
+    run()
