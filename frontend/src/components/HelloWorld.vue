@@ -41,13 +41,14 @@ export default {
 		sendMsgByBus() {
 			this.$EventBus.$emit("sendMsgByBus", "这是组件A发送的消息！");
 		},
+		// http://127.0.0.1:5000/api/值
 		get: function() {
-			axios.get(`http://127.0.0.1:5000/api/`).then(
+			axios.get(`http://127.0.0.1:5000/api/${this.input}`).then(
 				(response) => {
 					if (response.data.error == "error") {
 						console.log("backend error");
 					} else {
-						console.log(response.data.rst);
+						console.log(response.data.result);
 					}
 				},
 				(err) => {
@@ -55,6 +56,23 @@ export default {
 				}
 			);
 		},
+		// http://127.0.0.1:5000/api/?pkg=值
+		get2:function(){
+			axios.get(`http://127.0.0.1:5000/api/?pkg=${this.input}`).then(
+				(response) => {
+					if (response.data.error == "error") {
+						console.log("backend error");
+					} else {
+						console.log(response.data.result);
+					}
+				},
+				(err) => {
+					console.log(err.data);
+				}
+			);
+		},
+		// http://127.0.0.1:5000/api/
+    	// 传{"key":"值"}
 		post: function() {
 			axios
 				.post(`http://127.0.0.1:5000/api/`, {
@@ -65,7 +83,27 @@ export default {
 						if (response.data.error == "error") {
 							console.log("backend error");
 						} else {
-							console.log(response.data.rst);
+							console.log(response.data.result);
+						}
+					},
+					function(err) {
+						console.log(err.data);
+					}
+				);
+		},
+		// http://127.0.0.1:5000/api/值
+		// 传{"key":"值"}
+		post2: function() {
+			axios
+				.post(`http://127.0.0.1:5000/api/${this.input}`, {
+					key: JSON.stringify(this.input),
+				})
+				.then(
+					(response) => {
+						if (response.data.error == "error") {
+							console.log("backend error");
+						} else {
+							console.log(response.data.result);
 						}
 					},
 					function(err) {
