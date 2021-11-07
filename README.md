@@ -4,7 +4,7 @@ Vue + Flask RESTful
 # Features  
 ## Frontend (frontend folder)  
 npm run serve  
-- Vue + ElementUI + Axios + pubsub-js    
+- Vue + ionic + Axios + pubsub-js    
 - 父子组件/同级组件互相传值  
 - 前后端axios传值    
 
