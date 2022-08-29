@@ -1,4 +1,4 @@
-package com.ervin.client;
+package com.ervin.clienta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

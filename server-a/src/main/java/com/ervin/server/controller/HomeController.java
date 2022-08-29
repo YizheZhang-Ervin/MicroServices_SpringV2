@@ -29,8 +29,18 @@ public class HomeController {
     public static String encodePassword(@RequestParam String password) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 //        String encodedPassword = encoder.encode(password);
-        String encodedPassword = "$2a$10$SnIXGO9mfuKrpP0TweZLTuuLlwR4.rwnOd0cjtpVOEZzY/f/xdcDq";
+//        String encodedPassword = "$2a$10$SnIXGO9mfuKrpP0TweZLTuuLlwR4.rwnOd0cjtpVOEZzY/f/xdcDq";
+        String encodedPassword = "$2a$10$cdY/.o.TGBYpRcczcSU5ae3C2kfljkQLddjviHuTpSRo3tARZUQw6";
         boolean result = encoder.matches(password,encodedPassword);
         return encoder.encode(password)+ "," +result;
+    }
+
+    @GetMapping("/equal")
+    public static String equalTest() {
+        Boolean flag = Boolean.TRUE;
+        boolean result1 = flag.equals(true);
+        int result2 = flag.compareTo(true);
+        boolean result3 = flag.booleanValue()==true;
+        return result1+","+result2+","+result3;
     }
 }

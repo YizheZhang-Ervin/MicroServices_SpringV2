@@ -1,0 +1,13 @@
+FROM tomcat:jdk8-corretto-al2
+LABEL maintainer=ervin
+
+ENV APP_FILE=client-b.war
+ENV APP_HOME=$CATALINA_HOME/webapps
+ENV SERVER_PORT=9001
+
+COPY $APP_FILE $CATALINA_HOME
+
+WORKDIR $APP_HOME
+EXPOSE $SERVER_PORT
+
+CMD ["catalina.sh","run"]
