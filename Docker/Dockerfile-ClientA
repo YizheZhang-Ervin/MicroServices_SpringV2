@@ -1,0 +1,13 @@
+FROM openjdk:oraclelinux8
+LABEL maintainer=ervin
+
+ENV APP_FILE=client-a-1.0.jar
+ENV APP_HOME=/home/play
+ENV SERVER_PORT=9000
+
+COPY $APP_FILE $APP_HOME/
+
+WORKDIR $APP_HOME
+EXPOSE $SERVER_PORT
+
+CMD java -jar $APP_FILE

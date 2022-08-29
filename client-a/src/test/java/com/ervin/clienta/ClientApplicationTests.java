@@ -1,4 +1,4 @@
-package com.ervin.client;
+package com.ervin.clienta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
