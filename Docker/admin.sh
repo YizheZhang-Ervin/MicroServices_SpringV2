@@ -9,10 +9,14 @@ doBuild(){
 
 # 运行镜像
 doRun(){
-  podman network create mynet
-  podman run -p 8000:8000 --name server-a -d --net mynet server-a:latest
-  podman run -p 9000:9000 --name client-a -d --net mynet client-a:latest
-  podman run -p 9001:9001 --name client-b -d --net mynet client-b:latest
+  #podman network rm -f mynet
+  #podman network create mynet
+  #podman run -p 8000:8000 --name server-a -d --network mynet --network-alias servera server-a:latest
+  #podman run -p 9000:9000 --name client-a -d --network mynet --network-alias clienta client-a:latest
+  #podman run -p 9001:8080 --name client-b -d --network mynet --network-alias clientb client-b:latest
+  podman run -p 8000:8000 --name server-a -d server-a:latest
+  podman run -p 9000:9000 --name client-a -d --add-host server-a:192.168.137.22 client-a:latest
+  podman run -p 9001:8080 --name client-b -d --add-host server-a:192.168.137.22 client-b:latest
 }
 
 # 停止镜像
@@ -46,7 +50,14 @@ doLog(){
   podman logs "$1"
 }
 
-while getopts ":brsd:e:l:" opt
+# 检查在线状态
+doCheck(){
+  curl localhost:8000/check
+  curl localhost:9000/check
+  curl localhost:9001/check
+}
+
+while getopts ":brsd:e:l:c" opt
 do
  case $opt in
   b)
@@ -66,6 +77,9 @@ do
   ;;
   l)
   doLog "$OPTARG"
+  ;;
+  c)
+  doCheck
   ;;
   ?)
   echo "未知参数"

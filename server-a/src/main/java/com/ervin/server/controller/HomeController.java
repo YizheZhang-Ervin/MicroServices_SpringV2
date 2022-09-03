@@ -15,6 +15,11 @@ import java.util.List;
 @RequestMapping("/")
 public class HomeController {
 
+    @GetMapping("/check")
+    public String check(){
+        return "OK";
+    }
+
     @GetMapping("/home")
     public String home(@RequestParam String urls){
         List<String> urlLis = Arrays.asList(urls.split(","));
