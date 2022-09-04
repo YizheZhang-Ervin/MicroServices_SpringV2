@@ -54,7 +54,7 @@ doLog(){
 doCheck(){
   curl localhost:8000/check
   curl localhost:9000/check
-  curl localhost:9001/check
+  curl localhost:9001/client-b/check
 }
 
 while getopts ":brsd:e:l:c" opt
