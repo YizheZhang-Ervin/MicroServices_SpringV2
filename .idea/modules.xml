@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ElasticSearchDemo/ElasticSearchDemo.iml" filepath="$PROJECT_DIR$/ElasticSearchDemo/ElasticSearchDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FastDfsDemo/FastDfsDemo.iml" filepath="$PROJECT_DIR$/FastDfsDemo/FastDfsDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/MicroServiceDemo.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/MicroServiceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MicroServices_SpringDemo.iml" filepath="$PROJECT_DIR$/.idea/MicroServices_SpringDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MongoDBDemo/MongoDBDemo.iml" filepath="$PROJECT_DIR$/MongoDBDemo/MongoDBDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySqlDemo/MySqlDemo.iml" filepath="$PROJECT_DIR$/MySqlDemo/MySqlDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OtherDemo/OtherDemo.iml" filepath="$PROJECT_DIR$/OtherDemo/OtherDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarDemo/WarDemo.iml" filepath="$PROJECT_DIR$/WarDemo/WarDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/client-a/client-a.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/client-a/client-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/client-b/client-b.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/client-b/client-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/server-a/server-a.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/server-a/server-a.iml" />
+    </modules>
+  </component>
+</project>
