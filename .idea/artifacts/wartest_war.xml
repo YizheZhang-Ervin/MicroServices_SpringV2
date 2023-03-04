@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wartest:war">
+    <output-path>$PROJECT_DIR$/WarDemo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>wartest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="war-test.war">
+      <element id="artifact" artifact-name="wartest:war exploded" />
+    </root>
+  </artifact>
+</component>
