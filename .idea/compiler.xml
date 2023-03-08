@@ -7,14 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="WarDemo" />
+        <module name="CuratorApi" />
+        <module name="KafkaDemo" />
         <module name="server-a" />
-        <module name="FastDfsDemo" />
-        <module name="ElasticSearchDemo" />
         <module name="client-b" />
+        <module name="MySqlDemo" />
+        <module name="ImgSrvDemo" />
+        <module name="RedisDemo" />
+        <module name="ElasticSearchDemo" />
+        <module name="RedisPoolDemo" />
         <module name="MongoDBDemo" />
         <module name="client-a" />
-        <module name="MySqlDemo" />
         <module name="OtherDemo" />
+        <module name="zookeeperAPI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,12 +27,16 @@
       <module name="client" target="1.8" />
       <module name="client-a" target="1.8" />
       <module name="client-b" target="1.8" />
+      <module name="CuratorApi" target="1.8" />
       <module name="ElasticSearchDemo" target="1.8" />
-      <module name="FastDfsDemo" target="1.8" />
+      <module name="ImgSrvDemo" target="1.8" />
+      <module name="KafkaDemo" target="1.8" />
       <module name="MicroServiceDemo" target="1.8" />
       <module name="MongoDBDemo" target="1.8" />
       <module name="MySqlDemo" target="1.8" />
       <module name="OtherDemo" target="1.8" />
+      <module name="RedisDemo" target="1.8" />
+      <module name="RedisPoolDemo" target="1.8" />
       <module name="server" target="1.8" />
       <module name="server-a" target="1.8" />
       <module name="test (1)" target="1.8" />
@@ -35,15 +44,17 @@
       <module name="test (3)" target="1.8" />
       <module name="test (4)" target="1.8" />
       <module name="WarDemo" target="1.8" />
+      <module name="zookeeperAPI" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ElasticSearchDemo" options="-parameters" />
-      <module name="FastDfsDemo" options="-parameters" />
+      <module name="ImgSrvDemo" options="-parameters" />
       <module name="MongoDBDemo" options="-parameters" />
       <module name="MySqlDemo" options="-parameters" />
       <module name="OtherDemo" options="-parameters" />
+      <module name="RedisDemo" options="-parameters" />
       <module name="WarDemo" options="-parameters" />
       <module name="amdc" options="-parameters" />
       <module name="client" options="-parameters" />
