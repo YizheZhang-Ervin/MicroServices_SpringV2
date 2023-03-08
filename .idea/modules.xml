@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZookeeperDemo/CuratorApi/CuratorApi.iml" filepath="$PROJECT_DIR$/ZookeeperDemo/CuratorApi/CuratorApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/ElasticSearchDemo/ElasticSearchDemo.iml" filepath="$PROJECT_DIR$/ElasticSearchDemo/ElasticSearchDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FastDfsDemo/FastDfsDemo.iml" filepath="$PROJECT_DIR$/FastDfsDemo/FastDfsDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImgSrvDemo/ImgSrvDemo.iml" filepath="$PROJECT_DIR$/ImgSrvDemo/ImgSrvDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KafkaDemo/KafkaDemo.iml" filepath="$PROJECT_DIR$/KafkaDemo/KafkaDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/MicroServiceDemo.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/MicroServiceDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MicroServices_SpringDemo.iml" filepath="$PROJECT_DIR$/.idea/MicroServices_SpringDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MongoDBDemo/MongoDBDemo.iml" filepath="$PROJECT_DIR$/MongoDBDemo/MongoDBDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MySqlDemo/MySqlDemo.iml" filepath="$PROJECT_DIR$/MySqlDemo/MySqlDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/OtherDemo/OtherDemo.iml" filepath="$PROJECT_DIR$/OtherDemo/OtherDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RedisDemo/RedisDemo.iml" filepath="$PROJECT_DIR$/RedisDemo/RedisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RedisPoolDemo/RedisPoolDemo.iml" filepath="$PROJECT_DIR$/RedisPoolDemo/RedisPoolDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/WarDemo/WarDemo.iml" filepath="$PROJECT_DIR$/WarDemo/WarDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/client-a/client-a.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/client-a/client-a.iml" />
       <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/client-b/client-b.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/client-b/client-b.iml" />
       <module fileurl="file://$PROJECT_DIR$/MicroServiceDemo/server-a/server-a.iml" filepath="$PROJECT_DIR$/MicroServiceDemo/server-a/server-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZookeeperDemo/ZookeeperAPI/zookeeperAPI.iml" filepath="$PROJECT_DIR$/ZookeeperDemo/ZookeeperAPI/zookeeperAPI.iml" />
     </modules>
   </component>
 </project>

@@ -18,6 +18,12 @@
         <option value="$PROJECT_DIR$/FolderCheckDemo/amdc/pom.xml" />
         <option value="$PROJECT_DIR$/FolderCheckDemo/client/pom.xml" />
         <option value="$PROJECT_DIR$/FolderCheckDemo/server/pom.xml" />
+        <option value="$PROJECT_DIR$/RedisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/RedisPoolDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/KafkaDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ImgSrvDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ZookeeperDemo/CuratorApi/pom.xml" />
+        <option value="$PROJECT_DIR$/ZookeeperDemo/ZookeeperAPI/pom.xml" />
       </list>
     </option>
   </component>
