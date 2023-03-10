@@ -1,0 +1,10 @@
+package com.ervin.demo.Mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ervin.demo.Entity.User;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface UserMapper extends BaseMapper<User> {
+
+}
