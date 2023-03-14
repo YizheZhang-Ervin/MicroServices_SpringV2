@@ -13,10 +13,7 @@
     - Redis/RedisPool Demo
     - Etcd Demo (暂无)
 4. 搜索引擎
-    - ES Demo
-        - 全局搜索、智能补全 (暂无)
-        - canal同步mysql (暂无)
-        - 手动同步mysql (暂无)
+    - ES Demo (暂无)
 5. 宽列数据库
     - Cassandra Demo (暂无)
     - HBase Demo (暂无)
@@ -41,5 +38,3 @@
    - eureka
 2. War Demo
 3. WebSocket Demo
-4. Other Demo
-   - Zip打包下载
