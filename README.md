@@ -13,14 +13,13 @@
     - Redis/RedisPool Demo
     - Etcd Demo (暂无)
 4. 搜索引擎
-    - ES Demo (待改)
-        - 全局搜索
-        - 智能补全
-        - canal同步mysql
-        - 手动同步
+    - ES Demo
+        - 全局搜索、智能补全 (暂无)
+        - canal同步mysql (暂无)
+        - 手动同步mysql (暂无)
 5. 宽列数据库
     - Cassandra Demo (暂无)
-    - HBase Demo
+    - HBase Demo (暂无)
 6. 图形数据库
     - Neo4j Demo (暂无)
 7. 时序数据库
@@ -28,15 +27,13 @@
 
 ## 其他中间件
 1. 图片/对象/文件存储服务器
-    - FastDFS
-      - ImgSrv Demo
+    - FastDFS (ImgSrv Demo)
     - MinIO (暂无)
-      - ObjSrv Demo
     - HDFS (暂无)
     - Ceph (暂无)
 2. Kafka Demo
 3. Zookeeper Demo
-4. Spark Demo (待改)
+4. Spark Demo (暂无)
     - Spark Operator相关
 
 ## 其他
@@ -46,6 +43,3 @@
 3. WebSocket Demo
 4. Other Demo
    - Zip打包下载
-
-
-

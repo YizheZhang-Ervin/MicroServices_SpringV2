@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f8229c-3e34-4eeb-82c2-aacab3599f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/main/java/com/ervin/demo/Dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/main/java/com/ervin/demo/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlDemo/src/main/java/com/ervin/demo/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/main/java/com/ervin/demo/MySqlDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlDemo/src/main/java/com/ervin/demo/MySqlDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlDemo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySqlDemo/src/test/java/com/ervin/demo/MysqlTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlDemo/src/test/java/com/ervin/demo/MysqlTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +142,7 @@
       <updated>1677911927988</updated>
       <workItem from="1677911931966" duration="2721000" />
       <workItem from="1678278975134" duration="3478000" />
-      <workItem from="1678461069136" duration="3717000" />
+      <workItem from="1678461069136" duration="4407000" />
     </task>
     <servers />
   </component>
