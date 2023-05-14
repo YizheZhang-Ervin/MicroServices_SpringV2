@@ -55,9 +55,8 @@ public class JwtServiceImpl extends ServiceImpl<JwtMapper,Jwt> implements JwtSer
         // 生成token、refreshToken、当前时间、过期时间,更新库
         JwtVo tokenVo = createToken(reqVo);
         String token = tokenVo.getToken();
-        String refreshToken = UUID.randomUUID().toString();
         jwt.setToken(token)
-                .setRefreshToken(refreshToken)
+                .setRefreshToken(tokenVo.getRefreshToken())
                 .setTokenExpireTime(tokenVo.getTokenExpireTime())
                 .setRefreshTokenExpireTime(tokenVo.getRefreshTokenExpireTime());
         int res = jwtMapper.updateById(jwt);
