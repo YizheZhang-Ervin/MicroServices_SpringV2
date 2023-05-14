@@ -39,4 +39,4 @@
 2. War Zip Demo
 3. WebSocket Demo
 4. MicroWeb Demo
-    - Springboot & MybatisPlus & HikariCP & Jwt & Filter
+    - Springboot & MybatisPlus & HikariCP & Jwt & Aop & OkHttp & Eureka
