@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.ervin.play</groupId>
-	<artifactId>Play_Spring</artifactId>
+	<groupId>com.ervin.demo</groupId>
+	<artifactId>micro-service-demo</artifactId>
+	<name>micro-service-demo</name>
 	<version>1.0</version>
-	<name>Main</name>
 	<description>Play for Spring Boot</description>
 	<packaging>pom</packaging>
 	<properties>

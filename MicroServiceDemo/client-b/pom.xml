@@ -8,7 +8,7 @@
 		<version>2.6.8</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.ervin.play</groupId>
+	<groupId>com.ervin.demo</groupId>
 	<artifactId>client-b</artifactId>
 	<version>1.0</version>
 	<name>clientB</name>

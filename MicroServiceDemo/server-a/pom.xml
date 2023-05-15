@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.ervin.play</groupId>
-		<artifactId>Play_Spring</artifactId>
+		<groupId>com.ervin.demo</groupId>
+		<artifactId>micro-service-demo</artifactId>
 		<version>1.0</version>
 	</parent>
 	<artifactId>server-a</artifactId>
@@ -18,12 +18,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-		<!--JSON-->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>2.0.17.graal</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -35,8 +35,7 @@
 
 ## 其他
 1. MicroService Demo
-    - eureka
-2. War Zip Demo
-3. WebSocket Demo
-4. MicroWeb Demo
+    - eureka & war
+2. WebSocket Demo
+3. MicroWeb Demo
     - Springboot & MybatisPlus & HikariCP & Jwt & Aop & OkHttp & Eureka
