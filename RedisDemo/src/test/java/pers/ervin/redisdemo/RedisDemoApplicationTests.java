@@ -8,12 +8,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 @SpringBootTest
 class RedisDemoApplicationTests {
 
-    @Autowired
-    private StringRedisTemplate redisTemplate;
-
     @Test
     void contextLoads() {
-        redisTemplate.opsForValue().set("num", "666");
+
     }
 
 }

@@ -10,7 +10,7 @@
 2. 文档型数据库
     - MongoDB Demo
 3. 键值对数据库
-    - Redis/RedisPool Demo
+    - Redis Demo
     - Etcd Demo (暂无)
 4. 搜索引擎
     - ES Demo (暂无)
