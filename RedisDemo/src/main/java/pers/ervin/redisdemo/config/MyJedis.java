@@ -1,7 +1,9 @@
 package pers.ervin.redisdemo.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
+import pers.ervin.redisdemo.condition.JedisCondition;
 import redis.clients.jedis.*;
 
 import java.util.HashSet;
@@ -10,6 +12,7 @@ import java.util.HashSet;
 public class MyJedis {
 
     @Bean
+    @Conditional({JedisCondition.class})
     public JedisPool makeJedisPool(){
         // JedisPoolConfig配置对象
         JedisPoolConfig config = new JedisPoolConfig();
@@ -26,7 +29,8 @@ public class MyJedis {
     }
 
     @Bean
-    public JedisSentinelPool makeSentinelPool(){
+    @Conditional({JedisCondition.class})
+    public JedisSentinelPool makeJedisSentinelPool(){
         // JedisPoolConfig配置对象
         JedisPoolConfig config = new JedisPoolConfig();
         // 指定最大空闲连接为10个
@@ -46,6 +50,7 @@ public class MyJedis {
     }
 
     @Bean
+    @Conditional({JedisCondition.class})
     public JedisCluster makeJedisCluster(){
         // JedisPoolConfig配置对象
         JedisPoolConfig config = new JedisPoolConfig();

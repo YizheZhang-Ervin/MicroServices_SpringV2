@@ -2,13 +2,16 @@ package pers.ervin.redisdemo.service.jedis;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
+import pers.ervin.redisdemo.condition.JedisCondition;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import java.util.List;
 import java.util.Set;
 
 @Service
+@Conditional({JedisCondition.class})
 public class JedisService implements DisposableBean {
     @Autowired
     private JedisPool jedisPool;
