@@ -21,7 +21,7 @@
     - Cassandra Demo (暂无)
     - HBase Demo (暂无)
 6. 图形数据库
-    - Neo4j Demo (暂无)
+    - Neo4j Demo
 7. 时序数据库
     - InfluxDB Demo (暂无)
 
