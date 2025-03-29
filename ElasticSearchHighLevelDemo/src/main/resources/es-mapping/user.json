@@ -1,0 +1,54 @@
+{
+  "mappings": {
+    "userInfo": {
+      "properties": {
+        "id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type":"keyword",
+              "ignore_above":256
+            }
+          }
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type":"keyword",
+              "ignore_above":256
+            }
+          }
+        },
+        "age": {
+          "type": "integer",
+          "fields": {
+            "keyword": {
+              "type":"keyword",
+              "ignore_above":256
+            }
+          }
+        },
+        "sex": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type":"keyword",
+              "ignore_above":256
+            }
+          }
+        },
+        "interest ": {
+          "type": "text",
+          "fielddata": true,
+          "fields": {
+            "keyword": {
+              "type":"keyword",
+              "ignore_above":256
+            }
+          }
+        }
+      }
+    }
+  }
+}
