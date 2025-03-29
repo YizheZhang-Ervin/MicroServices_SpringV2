@@ -3,7 +3,7 @@
 ## 数据库系列
 1. 关系型数据库
     - Mysql Demo
-        - MybatisPlus
+        - MyBatisPlus & MyBatis
     - PostgreSQL Demo (暂无)
     - Hive Demo (暂无)
     - TiDB Demo (暂无)
@@ -11,12 +11,13 @@
     - MongoDB Demo
 3. 键值对数据库
     - Redis Demo
-	- Redission & Jedis & RedisTemplate
+	    - Redission & Jedis & RedisTemplate
     - Redisson Demo
 	- Lock
     - Etcd Demo (暂无)
 4. 搜索引擎
-    - ES Demo (暂无)
+    - ES Demo
+      	- ElasticsearchRestTemplate & EsHighLevel 
 5. 宽列数据库
     - Cassandra Demo (暂无)
     - HBase Demo (暂无)
