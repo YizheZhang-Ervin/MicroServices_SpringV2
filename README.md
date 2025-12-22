@@ -43,3 +43,4 @@
 2. WebSocket Demo
 3. MicroWeb Demo
     - Springboot & MybatisPlus & HikariCP & Jwt & Aop & OkHttp & Eureka
+4. SpringBatch Demo
